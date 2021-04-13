@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Test Your JavaScript Skills</h1>
+                <div class="progress hide">
+                    <p class="progressText"></p>
+                    <div class="progress__Bar">
+                        <div class="progress__Bar__full"></div>
+                    </div>
+                </div>
+                <div class="quiz">
+                    <div id="quiz__question" class="hide">
+                        <div id="question"></div>
+                        <div id="answers-btns">
+                        </div>
+                    </div>
+                    <div class="quiz__controls">
+                        <button id="start-btn" class="btn start-btn">Start Game</button>
+                        <button id="scoreBtn" class='btn start-btn scoreboard-btn'><i class="fas fa-trophy"></i>SCOREBOARD</button>
+                        <button id="next-btn" class="btn next-btn hide">Next</button>
+                    </div>
+                    <p id="result" class="hide"></p>
+                </div>
+            </div>
+        </div>
+        <div class="random randomHide" id="random">
+            <div class=" score">
+                <h2>QUIZ SCOREBOARD <i class="fas fa-trophy"></i></h2>
+                <table id="playersTable">
+                    <tr>
+                        <th>Name:</th>
+                        <th>Score:</th>
+                    </tr>
+                    <td>Evelina</td>
+                    <td>10</td>
+                </table>
+            </div>
+            <i class="far fa-times-circle" id="remove"></i>
+        </div>
+        <div class="saveName hide">
+            <form>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name">
+                <input type="submit" id="submitName">
+                <i class="far fa-times-circle " id="remove2"></i>
+            </form>
+            <button  class='scoreboard-btn2'><i class="fas fa-trophy"></i>SCOREBOARD</button>
+        </div>
+    </main>
+</body>
+</html>

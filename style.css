@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+/* Variables */
+:root {
+    --primary-color:#F3CF30;
+    --secondary-color: #ED7E31;
+    --acrent-color: #f4f4f4;
+
+    --light-color: #fff;
+    --dark-color: #333;
+
+    --correct: #52a04a;
+    --wrong: #b63333;
+}
+
+/* Mobile first */
+.wrapper {
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+.container {
+    width: 70%;
+    padding: 20px;
+    border: 10px solid var(--acrent-color);
+    background-color: var(--light-color);
+}
+.container h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.progressText {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.progress__Bar {
+    max-width: 50%;
+    height: 3rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.progress__Bar__full {
+    width: 0%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+}
+#question {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+#answers-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn {
+    width: calc(50% - 10px);
+    margin: 5px;
+    padding: 15px;
+    border: 0;
+    font-size: 1.2em;
+    word-wrap: break-word;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    border-radius: 5px;
+}
+.btn.correct {
+    background-color: var(--correct);
+    color: var(--light-color);
+  }
+  
+  .btn.wrong {
+    background-color: var(--wrong);
+    color: var(--light-color);
+  }
+  .scoreboard-btn2, .scoreboard-btn {
+      display: flex;
+      width: calc(50% - 10px);
+      margin: 5px;
+      padding: 15px;
+      border: 0;
+      font-size: 1.2em;
+      font-size: 1.5em;
+      background-color: var(--primary-color);
+  }
+  .scoreboard-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    border-radius: 5px;
+  }
+  .fas {
+      margin-right: 10px;
+  }
+.quiz__controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-btn, .next-btn {
+    font-size: 1.5em;
+    background-color: var(--primary-color);
+}
+.hide {
+    display: none;
+}
+.result1, .result2{
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    font-weight: 700;
+}
+.result1 {
+    color: var(--wrong);
+    border: liner-
+}
+.result2 {
+    color: var(--correct);
+    border: 1px solid var(--correct);
+}
+.random {
+    width: calc(100vw - 25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 30vh;
+    padding: 25px;
+    transition: 0.5s ease-in;
+}
+h2 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+.score {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+table {
+    width: 60%;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+th, td {
+    padding: 10px 20px;
+}
+th {
+    width: 80%;
+}
+td {
+    width: 20%;
+    text-align: center;
+}
+.randomHide {
+    display: none;
+}
+#remove2, #remove {  
+     position: absolute;
+    right: 5px;
+    top: 5px;
+}
+input[type='submit'] {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+input[type='text'] {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.saveName {
+    width: calc(100vw);
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+    position: absolute;
+    top: 40vw;
+    transition: display 1s ease-in;
+    transition-delay: 0.5s;
+}
